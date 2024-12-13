@@ -12,34 +12,43 @@ const Header = () => {
       <nav className="hidden md:block">
         <ul className="flex space-x-5 text-white ">
           <li>
-            <a href="#">Home</a>
+            <a href="/">Home</a>
           </li>
           <li>
-            <a href="#">About</a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a href="#">Projects</a>
+            <a href="#project">Projects</a>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <a href="#resume">Resume</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </nav>
 
       {toggleMenu && (
         <nav className="block md:hidden  ">
-          <ul className="flex flex-col  text-white mobile-nav ">
+          <ul
+            onClick={() => setToggleMenu(!toggleMenu)}
+            className="flex flex-col  text-white mobile-nav "
+          >
             <li>
-              <a href="#">Home</a>
+              <a href="/">Home</a>
             </li>
             <li>
-              <a href="#">About</a>
+              <a href="#about">About</a>
             </li>
             <li>
-              <a href="#">Projects</a>
+              <a href="#project">Projects</a>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <a href="#resume">Resume</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
             </li>
           </ul>
         </nav>

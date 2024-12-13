@@ -15,9 +15,17 @@ header ul li {
 }
 
 .mobile-nav{
-  @apply fixed top-10 bg-gray-500 w-full h-1/4 left-0
+  @apply fixed top-10 bg-gray-800 w-full h-1/4 left-0
 }
 
 .mobile-nav li{
   @apply w-full h-full text-center border-b-2
+}
+
+.btn{
+  @apply border-2 border-transparent px-5 py-2 bg-primary font-bold hover:border-white
+}
+
+html{
+  scroll-behavior: smooth;
 }
